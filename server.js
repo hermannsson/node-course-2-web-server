@@ -48,6 +48,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/project', (req, res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project',
+    projectMessage: 'Halló og gaman verkefni'
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Allt ónýtt'
